@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UnusedAttribute">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.pspdfkit.ui.PdfThumbnailBar
+        android:id="@+id/thumbnailBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+    <com.pspdfkit.ui.search.PdfSearchViewModular
+        android:id="@+id/modularSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:elevation="16dp"
+        android:splitMotionEvents="false">
+
+        <ImageView
+            android:id="@+id/closeSearchButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:elevation="16dp"
+            android:visibility="invisible"
+            android:src="@drawable/close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false">
+
+        <ImageView
+            android:id="@+id/openSearchButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/pspdf__ic_search" />
+
+        <ImageView
+            android:id="@+id/toggleThumbnailButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/pdf_thumbnail_toggle" />
+    </LinearLayout>
+</FrameLayout>
