@@ -111,6 +111,7 @@
     "jest": "^27.4.5",
     "storybook-addon-next-router": "^3.1.1"
   },
+  "engines": { "node": "22.x" },
   "volta": {
     "extends": "../../package.json"
   }
