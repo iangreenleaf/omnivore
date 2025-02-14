@@ -15,6 +15,7 @@
     "gql-typegen": "graphql-codegen",
     "deploy:web": "vercel --prod"
   },
+  "cacheDirectories": [".next/cache"],
   "dependencies": {},
   "devDependencies": {
     "@ardatan/aggregate-error": "^0.0.6",
