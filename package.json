@@ -10,7 +10,7 @@
   "scripts": {
     "test": "lerna run --stream test",
     "lint": "lerna run --parallel lint",
-    "build": "lerna run build --concurrency=1",
+    "build": "lerna run build --concurrency=1 --stream --no-bail --npm-client=yarn",
     "test:scoped:example": "lerna run test --scope={@omnivore/pdf-handler,@omnivore/web}",
     "gql-typegen": "graphql-codegen",
     "deploy:web": "vercel --prod"
